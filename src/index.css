@@ -1,0 +1,189 @@
+/* =========================
+   RESET AMAN
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #2E2E2E;
+  background: #FFF; /* ini cuma base, section yang ngatur warna */
+}
+
+/* =========================
+   WARNA UTAMA (JEPANG VIBES)
+========================= */
+:root {
+  --primary: #1F2A44;     /* navy Jepang */
+  --cta: #E45757;         /* merah sakura */
+}
+
+/* =========================
+   CONTAINER (FIX TENGAH)
+========================= */
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+.section {
+  padding: 80px 0;
+}
+
+/* =========================
+   WARNA PASTEL (ANTI PUTIH)
+========================= */
+.section-light {
+  background: #FFF1F2;   /* pink sakura */
+}
+
+.section-blue {
+  background: #EEF3FF;   /* milk blue */
+}
+
+.section-pink {
+  background: #ECF8F4;   /* mint pastel */
+}
+
+.section-cream {
+  background: #FFE5CC;   /* peach cream */
+}
+
+/* =========================
+   JUDUL & TEXT
+========================= */
+h1, h2, h3 {
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+p {
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* =========================
+   BUTTON (CTA)
+========================= */
+.btn-primary {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 32px;
+  background: var(--cta);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+/* =========================
+   NAVY AKSEN BIAR KELIATAN
+========================= */
+
+/* Judul section */
+.section h2 {
+  color: var(--primary);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* Garis bawah judul */
+.section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--primary);
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* Card title */
+.card h3 {
+  color: var(--primary);
+}
+
+/* Header background NAVY */
+.header {
+  background: var(--primary);
+}
+
+/* Header link */
+.header a {
+  color: #fff;
+}
+* {
+  transition: all 0.3s ease;
+}
+.section-blue {
+  background: linear-gradient(
+    180deg,
+    #EEF3FF 0%,
+    #F8FAFF 100%
+  );
+}
+.hero {
+  animation: heroZoom 20s ease-in-out infinite alternate;
+}
+
+@keyframes heroZoom {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 110%;
+  }
+}
+/* ===== SWIPE CONTAINER ===== */
+.swipe-wrapper {
+  overflow-x: auto;
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.swipe-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* ===== CARD ===== */
+.swipe-card {
+  flex: 0 0 280px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  scroll-snap-align: center;
+  box-shadow: 0 15px 35px rgba(31, 42, 68, 0.12);
+}
+
+/* Hover desktop */
+.swipe-card:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+
+/* Text */
+.swipe-card h3 {
+  margin-top: 0;
+  color: #1F2A44;
+}
+
+.swipe-card p {
+  font-size: 15px;
+  line-height: 1.6;
+}
