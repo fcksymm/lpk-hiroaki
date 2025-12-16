@@ -187,3 +187,39 @@ p {
   font-size: 15px;
   line-height: 1.6;
 }
+/* =========================
+   MOBILE CONTACT FIX
+========================= */
+@media (max-width: 768px) {
+
+  /* Judul */
+  #contact h2 {
+    font-size: 24px !important;
+  }
+
+  /* Subjudul */
+  #contact p {
+    font-size: 14px;
+  }
+
+  /* Card contact */
+  #contact .container > div {
+    padding: 20px !important;
+  }
+
+  /* Google Maps */
+  #contact iframe {
+    height: 220px !important;
+    border-radius: 12px;
+  }
+
+  /* Tombol WhatsApp */
+  #contact a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    padding: 14px 0;
+  }
+
+}
