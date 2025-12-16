@@ -223,3 +223,8 @@ p {
   }
 
 }
+@media (max-width: 768px) {
+  #contact iframe {
+    min-height: 600px !important;
+  }
+}

@@ -44,12 +44,13 @@ export default function Contact() {
           {/* FORM TALLY */}
           <div style={{ marginBottom: "30px" }}>
             <iframe
-              src="https://tally.so/embed/ODaW7M?hideTitle=1&transparentBackground=1&dynamicHeight=1"
-              width="100%"
-              height="400"
-              frameBorder="0"
-              title="Formulir Pendaftaran"
-            />
+  data-tally-src="https://tally.so/embed/ODaW7M?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+  loading="lazy"
+  width="100%"
+  style={{ border: 0, minHeight: '520px' }}
+  title="Formulir Pendaftaran">
+</iframe>
+
           </div>
 
           {/* BUTTON WHATSAPP */}
